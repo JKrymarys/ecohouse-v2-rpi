@@ -1,6 +1,7 @@
 
-const Gpio = require("onoff").Gpio;
-const I2C = require("raspi-i2c").I2C;
+// const Gpio = require("onoff").Gpio;
+// const I2C = require("raspi-i2c").I2C;
+import { I2C } from "raspi-i2c";
 
 const MPL3115A2_ADDRESS = 0x60;
 const MPL3115A2_CTRL_REG1 = 0x26;
