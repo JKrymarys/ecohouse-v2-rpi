@@ -4,7 +4,7 @@ import express from 'express';
 import { getCurrentHouseState } from './sensors/sensors.js'
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 app.get('/current-house-state', (req, res) => {
     res.send(getCurrentHouseState())
