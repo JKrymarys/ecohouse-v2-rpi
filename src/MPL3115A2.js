@@ -1,12 +1,9 @@
 
-// const Gpio = require("onoff").Gpio;
-// const I2C = require("raspi-i2c").I2C;
 import { I2C } from "raspi-i2c";
 
 const MPL3115A2_ADDRESS = 0x60;
 const MPL3115A2_CTRL_REG1 = 0x26;
 const MPL3115A2_CTRL_REG1_OS128 = 0x38;
-// const MPL3115A2_CTRL_REG1_ALT = 0x80;
 const MPL3115A2_CTRL_REG1_BAR = 0x00;
 const MPL3115A2_PT_DATA_CFG = 0x13;
 const MPL3115A2_REGISTER_TEMP_MSB = 0x04;

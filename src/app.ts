@@ -1,13 +1,12 @@
-"use strict";
 import express from 'express';
 import cors from 'cors';
 
-import { getCurrentHouseState } from './sensors/sensors.js'
+import { getCurrentHouseState } from './sensors'
 
 const app = express();
 const port = 5000;
 
-app.get('/current-house-state', cors(), (req, res) => {
+app.get('/current-house-state', cors() as any, (req, res) => {
     res.send(getCurrentHouseState())
 })
 
