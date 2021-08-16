@@ -9,10 +9,7 @@ export function getCurrentHouseState() {
     const combinedData = {
         temp: mpl3115a2.data().temp,
         pressure: mpl3115a2.data().pressure,
-        datetime: new Date(Date.now() - tzoffset)
-            .toISOString()
-            .slice(0, 19)
-            .replace("T", " ") //add offset to match timezone of Poland
+        timestamp:  new Date(Date.now() - tzoffset).toISOString().replace("Z", "")
     };
 
     console.log("Current data", combinedData);
